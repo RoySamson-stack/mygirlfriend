@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're the Prettiest!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            border: 2px solid #add8e6;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #ff69b4;
+            margin-bottom: 20px;
+        }
+
+        .game-area {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #ff69b4;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>You're the Prettiest!</h1>
+        <div class="game-area">
+            <p id="message">Click the button to reveal a surprise!</p>
+            <button id="reveal-button">Reveal</button>
+        </div>
+    </div>
+    <script>
+        document.getElementById('reveal-button').addEventListener('click', function() {
+            const message = document.getElementById('message');
+            message.innerHTML = "To my one and only Loreen Atenge my love , my heart:<br><br> \
+            <strong>To Loreen Atenge</strong><br><br> \
+            In the vast expanse of life's grand scene,<br> \
+            There's a shining star named Loreen,<br> \
+            With a heart so pure, and eyes so bright,<br> \
+            You fill my days with endless light.<br><br> \
+            Through every storm and darkest night,<br> \
+            Your love has been my guiding light,<br> \
+            A beacon strong, a hand to hold,<br> \
+            Your warmth is worth more than gold.<br><br> \
+            In laughter shared and silent tears,<br> \
+            You banish all my doubts and fears,<br> \
+            With every word and every glance,<br> \
+            You give my soul a second chance.<br><br> \
+            Your kindness is a gentle breeze,<br> \
+            That soothes my heart and puts it at ease,<br> \
+            In every smile, in every kiss,<br> \
+            I find a world of endless bliss.<br><br> \
+            Loreen, my love, my endless song,<br> \
+            With you is where I truly belong,<br> \
+            For in your love, I've found my home,<br> \
+            No longer will I ever roam.<br><br> \
+            Together, we can face each day,<br> \
+            With you, I'll never lose my way,<br> \
+            For in your heart, I see my dream,<br> \
+            My love for you, a boundless stream.<br><br> \
+            So here's to you, my heart,<br> \
+            My love for you will never end,<br> \
+            Loreen Atenge, my heart's delight,<br> \
+            I love you more with every night.<br><br> \
+            ";
+            message.style.color = "#ff69b4";
+            this.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
+
